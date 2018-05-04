@@ -1,0 +1,71 @@
+/* Colors
+desire: #e63946
+honeydew: #f1faee
+light blue: #a8dadc
+queen blue: #457b9d
+space cadet: #1d3557 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  order: -1;
+}
+
+#palette {
+  width: 25%;
+  order: 0;
+}
+
+#hero {
+  width: 75%;
+  order: 1;
+}
+
+#images {
+  order: 2;
+}
+
+#images #ladybug {
+  float: left;
+  width: 33%;
+}
+
+#images #tree {
+  float: left;
+  width: 33%;
+}
+
+#images #aurora {
+  float: left;
+  width: 33%;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+#honeydew {
+  background-color: #f1faee
+}
+
+#space-cadet {
+  background-color: #1d3557;
+}
+
+#queen-blue {
+  background-color: #457b9d;
+}
+
+/* MEDIA QUERIES */
