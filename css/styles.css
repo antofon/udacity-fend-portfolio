@@ -8,6 +8,7 @@ space cadet: #1d3557 */
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 header {
@@ -15,29 +16,37 @@ header {
   /* order: -1; */
   display: flex;
   justify-content: flex-end;
-
 }
 
 #header-copy {
   text-align: right;
 }
 
+#header-copy h1,h5 {
+  text-transform: uppercase;
+}
+
+#header-copy h1 {
+  font-weight: 400;
+}
+
+#wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
 .container {
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  border-bottom: 3px solid #cccccc;
+  border-bottom: 3px solid #457b9d;
   padding-bottom: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
-
-
 
 #logo {
   display: inline-block;
-
 }
 
 #header-copy {
@@ -54,23 +63,28 @@ header {
   order: 1;
 }
 
+#image-section-title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
 #images {
   order: 2;
+  display: flex;
+  justify-content: space-between;
 }
 
-#images #ladybug {
-  float: left;
-  width: 33%;
+#images h1 {
+  display: none;
 }
 
-#images #tree {
-  float: left;
-  width: 33%;
+#images figure {
+  text-align: center;
 }
 
-#images #aurora {
-  float: left;
-  width: 33%;
+#images p {
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .box {
