@@ -1,15 +1,11 @@
-/* Colors
-desire: #e63946
-honeydew: #f1faee
-light blue: #a8dadc
-queen blue: #457b9d
-space cadet: #1d3557 */
+/* Colors - > desire: #e63946 honeydew: #f1faee light blue: #a8dadc queen blue: #457b9d space cadet: #1d3557 */
 
 * {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
 }
+
 
 /* ===== BACKGROUND COLORS ===== */
 
@@ -32,6 +28,7 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+
 
 /* =====  CLASSSES  ===== */
 .box {
@@ -73,17 +70,21 @@ header {
 }
 
 #images {
-  order: 2;
   display: flex;
-  justify-content: space-between;
-}
-
-#images h1 {
-  display: none;
+  flex-direction: column;
 }
 
 #images figure {
   text-align: center;
+}
+
+#images img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#images h1 {
+  display: none;
 }
 
 #images p {
@@ -100,11 +101,20 @@ header {
   order: 0;
 }
 
-#wrapper {
-  max-width: 1000px;
-  margin: auto;
-  order: 1;
-}
-
 
 /* =====  MEDIA QUERIES  ===== */
+
+@media (min-width: 1000px) {
+  #images {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #wrapper {
+    max-width: 1000px;
+    margin: auto;
+    order: 1;
+  }
+}
