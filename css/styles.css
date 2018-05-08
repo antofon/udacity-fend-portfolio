@@ -7,8 +7,11 @@
 }
 
 
-/* ===== BACKGROUND COLORS ===== */
+/* ===== COLORS ===== */
 
+.border-black {
+  border: 1.5px solid #000;
+}
 #honeydew {
   background-color: #f1faee
 }
@@ -22,6 +25,8 @@
 }
 
 
+
+
 /* =====  TAGS  ===== */
 header {
   width: 100%;
@@ -29,6 +34,9 @@ header {
   justify-content: flex-end;
 }
 
+#palette h3 {
+  display: none;
+}
 
 /* =====  CLASSSES  ===== */
 .box {
@@ -37,8 +45,8 @@ header {
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   border-bottom: 3px solid #457b9d;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -59,10 +67,9 @@ header {
   font-weight: 400;
 }
 
-#hero {
-  width: 75%;
+/* #hero {
   order: 1;
-}
+} */
 
 #image-section-title {
   margin-top: 25px;
@@ -96,25 +103,66 @@ header {
   display: inline-block;
 }
 
-#palette {
-  width: 25%;
-  order: 0;
+#container {
+  display: flex;
+  flex-wrap: wrap;
 }
+/* #palette {
+  order: 0;
+} */
 
 
 /* =====  MEDIA QUERIES  ===== */
 
 @media (min-width: 1000px) {
-  #images {
+  /* #images {
     order: 2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: 3px solid red;
+  } */
+
+  #images #ladybug, #tree, #aurora {
+    width: 33.333333%;
   }
 
-  #wrapper {
-    max-width: 1000px;
-    margin: auto;
+  #container {
+    width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #exclude-palette-content {
+    width: 80%;
+  }
+
+  #palette {
+    width: 20%;
+    margin-top: 107.5px;
+  }
+
+  /* #container-palette-hero {
+
+  } */
+
+  /* #hero {
     order: 1;
   }
+
+  #palette {
+    order: 0;
+  } */
+  /* #hero {
+    display: inline-block;
+    width: 75%;
+  }
+
+  #palette {
+    display: inline-block;
+    width: 25%;
+  } */
+
+
 }
