@@ -6,6 +6,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
+
 /* ===== COLORS ===== */
 .border-black {
   border: 1.5px solid #000;
@@ -82,13 +83,18 @@ header {
 }
 
 #image-section-title {
-  margin-top: 25px;
-  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 20px 0;
+  text-transform: uppercase;
+  font-size: 1.2em;
 }
 
 #images {
   display: flex;
   flex-direction: column;
+  margin: auto;
+  width: 100%;
 }
 
 #images figure {
@@ -101,6 +107,10 @@ header {
   border: 1.5px solid #08B4E4;
 }
 
+#ladybug, #tree, #aurora {
+  width: 100%;
+  margin: auto;
+}
 #images h1 {
   display: none;
 }
@@ -110,6 +120,9 @@ header {
   font-weight: 500;
 }
 
+#tree, #aurora {
+  margin-top: 70px;
+}
 /* =====  MEDIA QUERIES  ===== */
 @media (min-width: 400px){
   #header-copy h1 {
@@ -131,11 +144,15 @@ header {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 850px) {
   #images {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+  }
+
+  #tree, #aurora {
+    margin-top: 0;
   }
 }
 
