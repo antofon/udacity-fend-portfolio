@@ -29,13 +29,12 @@
 
 /* =====  TAGS  ===== */
 header {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
 
-#palette h3 {
-  display: none;
+  display: flex;
+  /* justify-content: flex-end; */
+  /* border-bottom: 3px solid #457b9d; */
+  padding-bottom: 20px;
+
 }
 
 /* =====  CLASSSES  ===== */
@@ -44,19 +43,19 @@ header {
   height: 100px;
 }
 
-.container {
-  /* display: flex;
-  justify-content: space-between; */
-  border-bottom: 3px solid #457b9d;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
 
 /* =====  IDS  ===== */
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
 #header-copy {
   text-align: right;
   display: inline-block;
+  width: 100%;
 }
 
 #header-copy h1,h5 {
@@ -67,13 +66,9 @@ header {
   font-weight: 400;
 }
 
-/* #hero {
-  order: 1;
-} */
-
 #image-section-title {
   margin-top: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #images {
@@ -99,70 +94,30 @@ header {
   font-weight: 500;
 }
 
-#logo {
-  display: inline-block;
-}
-
-#container {
-  display: flex;
-  flex-wrap: wrap;
-}
-/* #palette {
-  order: 0;
-} */
-
 
 /* =====  MEDIA QUERIES  ===== */
 
-@media (min-width: 1000px) {
-  /* #images {
-    order: 2;
-    display: flex;
+@media (min-width: 850px) {
+
+  header{
+    width: 850px;
+    margin: 20px auto;
+  }
+
+  #logo-header-copy {
+    width: 100%;
+  }
+
+  #images {
     flex-direction: row;
     justify-content: space-between;
-    border: 3px solid red;
-  } */
-
-  #images #ladybug, #tree, #aurora {
-    width: 33.333333%;
+    width: 100%;
   }
 
   #container {
-    width: 1000px;
-
+    width: 850px;
     margin-left: auto;
     margin-right: auto;
   }
-
-  #exclude-palette-content {
-    width: 80%;
-  }
-
-  #palette {
-    width: 20%;
-    margin-top: 107.5px;
-  }
-
-  /* #container-palette-hero {
-
-  } */
-
-  /* #hero {
-    order: 1;
-  }
-
-  #palette {
-    order: 0;
-  } */
-  /* #hero {
-    display: inline-block;
-    width: 75%;
-  }
-
-  #palette {
-    display: inline-block;
-    width: 25%;
-  } */
-
 
 }
