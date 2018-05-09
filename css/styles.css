@@ -13,7 +13,7 @@
   border: 1.5px solid #000;
 }
 #honeydew {
-  background-color: #f1faee
+  background-color: #f1faee;
 }
 
 #space-cadet {
@@ -28,8 +28,17 @@
 
 
 /* =====  TAGS  ===== */
-header {
+a {
+  text-decoration: none;
+  color: #f1faee;
+  background-color: #1d3557;
+  margin-top: 10px;
+  padding: 15px 15px;
+  width: 100%;
+  transition: .3s all ease-in-out;
+}
 
+header {
   display: flex;
   /* justify-content: flex-end; */
   /* border-bottom: 3px solid #457b9d; */
@@ -83,19 +92,28 @@ header {
 #images img {
   max-width: 100%;
   max-height: 100%;
+  border: 1.5px solid #1d3557;
 }
 
 #images h1 {
   display: none;
 }
 
-#images p {
+#images a {
   text-transform: uppercase;
   font-weight: 500;
 }
 
 
 /* =====  MEDIA QUERIES  ===== */
+@media (min-width: 768px) {
+  #images {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
 
 @media (min-width: 850px) {
 
@@ -108,11 +126,7 @@ header {
     width: 100%;
   }
 
-  #images {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-  }
+
 
   #container {
     width: 850px;
@@ -120,4 +134,16 @@ header {
     margin-right: auto;
   }
 
+}
+
+
+/* =====  PSUEDOCLASSES/PSUEDOELEMENTS ===== */
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1d3557;
+  background-color: #f1faee;
+  border: 1px solid #1d3557;
 }
