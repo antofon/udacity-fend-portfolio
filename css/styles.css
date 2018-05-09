@@ -26,7 +26,7 @@
 a {
   text-decoration: none;
   color: #f1faee;
-  background-color: #1d3557;
+  background-color: #08B4E4;
   margin-top: 10px;
   padding: 15px 15px;
   width: 100%;
@@ -64,10 +64,12 @@ header {
 
 #header-copy h1 {
   font-size: 1.3em;
+  color: #08B4E4;
 }
 
 #header-copy h5 {
   font-size: 0.8em;
+  color: #1d3557;
 }
 
 #header-copy h1 {
@@ -76,7 +78,7 @@ header {
 
 #hero img {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
 }
 
 #image-section-title {
@@ -95,8 +97,8 @@ header {
 
 #images img {
   max-width: 100%;
-  max-height: 100%;
-  border: 1.5px solid #1d3557;
+  height: auto;
+  border: 1.5px solid #08B4E4;
 }
 
 #images h1 {
@@ -137,7 +139,8 @@ header {
   }
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1000px) {
+
   #header-copy h1 {
     font-size: 2em;
   }
@@ -147,7 +150,7 @@ header {
   }
 
   header{
-    width: 850px;
+    width: 1000px;
 
   }
 
@@ -156,7 +159,7 @@ header {
   }
 
   #container {
-    width: 850px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
