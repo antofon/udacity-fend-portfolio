@@ -107,7 +107,7 @@ header {
   border: 1.5px solid #08B4E4;
 }
 
-#ladybug, #tree, #aurora {
+#pixel-project, #twitch-project, #random-quote-machine-project {
   width: 100%;
   margin: auto;
 }
@@ -120,7 +120,7 @@ header {
   font-weight: 500;
 }
 
-#tree, #aurora {
+#twitch-project, #random-quote-machine-project {
   margin-top: 70px;
 }
 /* =====  MEDIA QUERIES  ===== */
@@ -151,7 +151,7 @@ header {
     width: 100%;
   }
 
-  #tree, #aurora {
+  #twitch-project, #random-quote-machine-project {
     margin-top: 0;
   }
 }
