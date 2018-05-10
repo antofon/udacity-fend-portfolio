@@ -1,26 +1,9 @@
-/* Colors - > desire: #e63946 honeydew: #f1faee light blue: #a8dadc queen blue: #457b9d space cadet: #1d3557 */
+/* Colors - > desire: #e63946 honeydew: #f1faee light blue: #a8dadc queen blue: #457b9d space cadet: #1d3557 udacity: #08B4E4*/
 
 * {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
-}
-
-
-/* ===== COLORS ===== */
-.border-black {
-  border: 1.5px solid #000;
-}
-#honeydew {
-  background-color: #f1faee;
-}
-
-#space-cadet {
-  background-color: #1d3557;
-}
-
-#queen-blue {
-  background-color: #457b9d;
 }
 
 /* =====  TAGS  ===== */
@@ -40,7 +23,15 @@ header {
   margin: 20px auto;
 }
 
+p {
+  margin-top: 25px;
+}
+
 /* =====  CLASSSES  ===== */
+.border-black {
+  border: 1.5px solid #000;
+}
+
 .box {
   width: 100px;
   height: 100px;
@@ -51,6 +42,18 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
+}
+
+#honeydew {
+  background-color: #f1faee;
+}
+
+#space-cadet {
+  background-color: #1d3557;
+}
+
+#queen-blue {
+  background-color: #457b9d;
 }
 
 #header-copy {
@@ -84,10 +87,11 @@ header {
 
 #image-section-title {
   width: 100%;
-  text-align: center;
-  margin: 30px 0 20px 0;
+  margin: 50px 0 20px 0;
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  color: #1d3557;
+  text-align: center;
 }
 
 #images {
@@ -95,6 +99,11 @@ header {
   flex-direction: column;
   margin: auto;
   width: 100%;
+}
+
+#images a {
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 #images figure {
@@ -111,20 +120,13 @@ header {
   width: 100%;
   margin: auto;
 }
-#images h1 {
-  display: none;
-}
-
-#images a {
-  text-transform: uppercase;
-  font-weight: 500;
-}
 
 #twitch-project, #random-quote-machine-project {
   margin-top: 70px;
 }
+
 /* =====  MEDIA QUERIES  ===== */
-@media (min-width: 400px){
+@media screen and (min-width: 400px){
   #header-copy h1 {
     font-size: 1.4em;
   }
@@ -134,7 +136,7 @@ header {
   }
 }
 
-@media (min-width: 500px){
+@media screen and (min-width: 500px){
   #header-copy h1 {
     font-size: 1.7em;
   }
@@ -144,7 +146,13 @@ header {
   }
 }
 
-@media (min-width: 850px) {
+@media screen and (min-width: 700px) {
+  #image-section-title {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 850px) {
   #images {
     flex-direction: row;
     justify-content: space-between;
@@ -154,9 +162,13 @@ header {
   #twitch-project, #random-quote-machine-project {
     margin-top: 0;
   }
+
+  #image-section-title{
+    text-align: left;
+  }
 }
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
 
   #header-copy h1 {
     font-size: 2em;
@@ -168,7 +180,6 @@ header {
 
   header{
     width: 1000px;
-
   }
 
   #logo-header-copy {
