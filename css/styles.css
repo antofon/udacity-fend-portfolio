@@ -168,6 +168,11 @@ p {
   }
 }
 
+@media screen and (min-width: 880px) {
+  p {
+    font-size: 0.95em;
+  }
+}
 @media screen and (min-width: 1000px) {
 
   #header-copy h1 {
