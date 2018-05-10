@@ -44,18 +44,6 @@ p {
   margin-bottom: 40px;
 }
 
-#honeydew {
-  background-color: #f1faee;
-}
-
-#space-cadet {
-  background-color: #1d3557;
-}
-
-#queen-blue {
-  background-color: #457b9d;
-}
-
 #header-copy {
   text-align: right;
   display: inline-block;
@@ -83,6 +71,10 @@ p {
 #hero img {
   max-width: 100%;
   height: auto;
+}
+
+#honeydew {
+  background-color: #f1faee;
 }
 
 #image-section-title {
@@ -119,6 +111,14 @@ p {
 #pixel-project, #twitch-project, #random-quote-machine-project {
   width: 100%;
   margin: auto;
+}
+
+#queen-blue {
+  background-color: #457b9d;
+}
+
+#space-cadet {
+  background-color: #1d3557;
 }
 
 #twitch-project, #random-quote-machine-project {
